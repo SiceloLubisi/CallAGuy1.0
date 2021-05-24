@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CallAGuy
 {
-    public partial class Form1 : Form
+    public partial class frmOrder : Form
     {
-        public Form1()
+        public frmOrder()
         {
             InitializeComponent();
             lblDisplayPetrol.Text = "0";
@@ -54,6 +54,14 @@ namespace CallAGuy
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Instructions on how to use the app");
+        }
+
+        //Logout Click Event
+        private void logoutoolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmLogin fl = new frmLogin();
+            fl.Show(); 
         }
     }
 }
