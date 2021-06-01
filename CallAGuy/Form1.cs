@@ -10,13 +10,20 @@ using System.Windows.Forms;
 
 namespace CallAGuy
 {
-    public partial class Form1 : Form
+    public partial class frmOrder : Form
     {
-        public Form1()
+        //Declaring the form
+        //public static frmWelcomePage instance; 
+
+        public frmOrder()
         {
             InitializeComponent();
             lblDisplayPetrol.Text = "0";
             lblRands.Text = "0";
+
+            //Show the login form
+            //frmWelcomePage form = new frmWelcomePage();
+            //form.ShowDialog(); 
         }
 
         private void previousOrdersToolStripMenuItem_Click(object sender, EventArgs e)
@@ -54,6 +61,14 @@ namespace CallAGuy
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Instructions on how to use the app");
+        }
+
+        //Logout Click Event
+        private void logoutoolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmLogin fl = new frmLogin();
+            fl.Show(); 
         }
     }
 }

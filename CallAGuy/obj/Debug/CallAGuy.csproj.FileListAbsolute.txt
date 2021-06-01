@@ -8,3 +8,15 @@ C:\Users\sicel\source\repos\CallAGuy\CallAGuy\obj\Debug\CallAGuy.csproj.Generate
 C:\Users\sicel\source\repos\CallAGuy\CallAGuy\obj\Debug\CallAGuy.csproj.CoreCompileInputs.cache
 C:\Users\sicel\source\repos\CallAGuy\CallAGuy\obj\Debug\CallAGuy.exe
 C:\Users\sicel\source\repos\CallAGuy\CallAGuy\obj\Debug\CallAGuy.pdb
+C:\Users\sicel\Desktop\Practice\CallAGuy1.0\CallAGuy\bin\Debug\CallAGuy.exe.config
+C:\Users\sicel\Desktop\Practice\CallAGuy1.0\CallAGuy\bin\Debug\CallAGuy.exe
+C:\Users\sicel\Desktop\Practice\CallAGuy1.0\CallAGuy\bin\Debug\CallAGuy.pdb
+C:\Users\sicel\Desktop\Practice\CallAGuy1.0\CallAGuy\obj\Debug\CallAGuy.frmOrder.resources
+C:\Users\sicel\Desktop\Practice\CallAGuy1.0\CallAGuy\obj\Debug\CallAGuy.frmLogin.resources
+C:\Users\sicel\Desktop\Practice\CallAGuy1.0\CallAGuy\obj\Debug\CallAGuy.Properties.Resources.resources
+C:\Users\sicel\Desktop\Practice\CallAGuy1.0\CallAGuy\obj\Debug\CallAGuy.csproj.GenerateResource.cache
+C:\Users\sicel\Desktop\Practice\CallAGuy1.0\CallAGuy\obj\Debug\CallAGuy.csproj.CoreCompileInputs.cache
+C:\Users\sicel\Desktop\Practice\CallAGuy1.0\CallAGuy\obj\Debug\CallAGuy.exe
+C:\Users\sicel\Desktop\Practice\CallAGuy1.0\CallAGuy\obj\Debug\CallAGuy.pdb
+C:\Users\sicel\Desktop\Practice\CallAGuy1.0\CallAGuy\obj\Debug\CallAGuy.frmWelcomePage.resources
+C:\Users\sicel\Desktop\Practice\CallAGuy1.0\CallAGuy\obj\Debug\CallAGuy.csproj.AssemblyReference.cache

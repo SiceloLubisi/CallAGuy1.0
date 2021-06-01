@@ -1,7 +1,7 @@
 ﻿
 namespace CallAGuy
 {
-    partial class Form1
+    partial class frmOrder
     {
         /// <summary>
         /// Required designer variable.
@@ -36,6 +36,7 @@ namespace CallAGuy
             this.previousOrdersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.gbxPetrolMeter = new System.Windows.Forms.GroupBox();
@@ -76,7 +77,8 @@ namespace CallAGuy
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.orderToolStripMenuItem,
             this.helpToolStripMenuItem,
-            this.infoToolStripMenuItem});
+            this.infoToolStripMenuItem,
+            this.logoutoolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(645, 24);
@@ -111,6 +113,13 @@ namespace CallAGuy
             this.infoToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
             this.infoToolStripMenuItem.Text = "Info";
             this.infoToolStripMenuItem.Click += new System.EventHandler(this.infoToolStripMenuItem_Click);
+            // 
+            // logoutoolStripMenuItem
+            // 
+            this.logoutoolStripMenuItem.Name = "logoutoolStripMenuItem";
+            this.logoutoolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.logoutoolStripMenuItem.Text = "Logout";
+            this.logoutoolStripMenuItem.Click += new System.EventHandler(this.logoutoolStripMenuItem_Click);
             // 
             // comboBox1
             // 
@@ -237,7 +246,7 @@ namespace CallAGuy
             this.label1.TabIndex = 4;
             this.label1.Text = "Diesel Type:";
             // 
-            // Form1
+            // frmOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -246,7 +255,7 @@ namespace CallAGuy
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "frmOrder";
             this.Text = "Call A Guy: Online Diesel Ordering App";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
@@ -282,6 +291,7 @@ namespace CallAGuy
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblPricePerLitre;
         private System.Windows.Forms.Label lblRands;
+        private System.Windows.Forms.ToolStripMenuItem logoutoolStripMenuItem;
     }
 }
 
