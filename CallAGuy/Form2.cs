@@ -16,5 +16,26 @@ namespace CallAGuy
         {
             InitializeComponent();
         }
+
+        public static frmOrder frmInstance; 
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (txtUsername.Text == "Sicelomeg@gmail.com" && txtPassword.Text == "Sicelo123")
+            {
+                this.Hide(); 
+                frmOrder form = new frmOrder();
+                form.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("The Username or Password you entered is incorrect, try again!!"); 
+            }
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); 
+        }
     }
 }

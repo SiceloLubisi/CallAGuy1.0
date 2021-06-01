@@ -12,11 +12,18 @@ namespace CallAGuy
 {
     public partial class frmOrder : Form
     {
+        //Declaring the form
+        //public static frmWelcomePage instance; 
+
         public frmOrder()
         {
             InitializeComponent();
             lblDisplayPetrol.Text = "0";
             lblRands.Text = "0";
+
+            //Show the login form
+            //frmWelcomePage form = new frmWelcomePage();
+            //form.ShowDialog(); 
         }
 
         private void previousOrdersToolStripMenuItem_Click(object sender, EventArgs e)

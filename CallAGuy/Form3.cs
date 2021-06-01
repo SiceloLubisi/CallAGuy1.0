@@ -21,7 +21,12 @@ namespace CallAGuy
         {
             this.Hide();
             frmLogin fl = new frmLogin();
-            fl.Show();
+            fl.ShowDialog();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
