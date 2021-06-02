@@ -61,6 +61,7 @@ namespace CallAGuy
             this.txtPassword.Location = new System.Drawing.Point(122, 289);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(120, 20);
             this.txtPassword.TabIndex = 2;
             // 
@@ -75,6 +76,7 @@ namespace CallAGuy
             // 
             // btnLogin
             // 
+            this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnLogin.Location = new System.Drawing.Point(63, 340);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);

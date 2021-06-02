@@ -28,7 +28,9 @@ namespace CallAGuy
 
         private void previousOrdersToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            lblDisplayPetrol.Text = "0";
+            lblRands.Text = "0"; 
+            
         }
 
         private void trackBar1_Scroll(object sender, EventArgs e)
@@ -75,6 +77,22 @@ namespace CallAGuy
             this.Hide();
             frmLogin fl = new frmLogin();
             fl.Show(); 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+            if (comboBox1.SelectedItem != null)
+            {
+                string a;
+                object selectedItem = comboBox1.SelectedItem;
+                a = selectedItem.ToString();
+                MessageBox.Show("You have ordered " + lblDisplayPetrol.Text + " litres of " + a + " Type which will cost you an estimated Total Amount of: R" + lblRands.Text + ".");
+            }
+            else
+            {
+                MessageBox.Show("Please select a valid Diesel Type!"); 
+            }
         }
     }
 }

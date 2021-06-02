@@ -28,5 +28,10 @@ namespace CallAGuy
         {
             Application.Exit();
         }
+
+        private void infoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This is a Message box that will have the company information and key information the company should know about.");
+        }
     }
 }

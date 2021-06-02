@@ -20,7 +20,7 @@ namespace CallAGuy
         public static frmOrder frmInstance; 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text == "Sicelomeg@gmail.com" && txtPassword.Text == "Sicelo123")
+            if (txtUsername.Text == "" && txtPassword.Text == "")
             {
                 this.Hide(); 
                 frmOrder form = new frmOrder();

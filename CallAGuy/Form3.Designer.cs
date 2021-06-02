@@ -41,7 +41,7 @@ namespace CallAGuy
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(34, 252);
+            this.btnLogin.Location = new System.Drawing.Point(30, 284);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(103, 59);
             this.btnLogin.TabIndex = 1;
@@ -65,6 +65,7 @@ namespace CallAGuy
             this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
             this.infoToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
             this.infoToolStripMenuItem.Text = "Info";
+            this.infoToolStripMenuItem.Click += new System.EventHandler(this.infoToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -75,7 +76,7 @@ namespace CallAGuy
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(159, 252);
+            this.button2.Location = new System.Drawing.Point(162, 284);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(92, 59);
             this.button2.TabIndex = 3;
@@ -85,9 +86,9 @@ namespace CallAGuy
             // pictureBox1
             // 
             this.pictureBox1.Image = global::CallAGuy.Properties.Resources.Call_a_GUY_Flyers_360x;
-            this.pictureBox1.Location = new System.Drawing.Point(43, 70);
+            this.pictureBox1.Location = new System.Drawing.Point(30, 72);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(184, 127);
+            this.pictureBox1.Size = new System.Drawing.Size(224, 166);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
