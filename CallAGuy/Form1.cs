@@ -33,8 +33,13 @@ namespace CallAGuy
 
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
-            lblDisplayPetrol.Text = trackBar1.Value.ToString();
 
+            lblDisplayPetrol.Text = trackBar1.Value.ToString();
+            int a = Convert.ToInt32(lblDisplayPetrol.Text);
+            int b = a * 14;
+            lblRands.Text = b.ToString();
+            
+            /*
             if (trackBar1.Value == 1)
             {
                 lblRands.Text = "14.43";
@@ -43,6 +48,7 @@ namespace CallAGuy
             {
                 lblRands.Text = "28.86"; 
             }
+            */
         }
 
         private void Form1_Load(object sender, EventArgs e)
