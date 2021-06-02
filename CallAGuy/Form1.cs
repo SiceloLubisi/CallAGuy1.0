@@ -29,7 +29,9 @@ namespace CallAGuy
         private void previousOrdersToolStripMenuItem_Click(object sender, EventArgs e)
         {
             lblDisplayPetrol.Text = "0";
-            lblRands.Text = "0"; 
+            lblRands.Text = "0";
+            comboBox1.SelectedIndex = -1;
+            trackBar1.Value = trackBar1.Minimum; 
             
         }
 
@@ -81,13 +83,13 @@ namespace CallAGuy
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+
             if (comboBox1.SelectedItem != null)
             {
                 string a;
                 object selectedItem = comboBox1.SelectedItem;
                 a = selectedItem.ToString();
-                MessageBox.Show("You have ordered " + lblDisplayPetrol.Text + " litres of " + a + " Type which will cost you an estimated Total Amount of: R" + lblRands.Text + ".");
+                MessageBox.Show("You have ordered " + lblDisplayPetrol.Text + " litres of " + a + " which will cost an estimated Total Amount of: R" + lblRands.Text + ".");
             }
             else
             {
