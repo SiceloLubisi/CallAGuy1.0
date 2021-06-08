@@ -20,3 +20,4 @@ C:\Users\sicel\Desktop\Practice\CallAGuy1.0\CallAGuy\obj\Debug\CallAGuy.exe
 C:\Users\sicel\Desktop\Practice\CallAGuy1.0\CallAGuy\obj\Debug\CallAGuy.pdb
 C:\Users\sicel\Desktop\Practice\CallAGuy1.0\CallAGuy\obj\Debug\CallAGuy.frmWelcomePage.resources
 C:\Users\sicel\Desktop\Practice\CallAGuy1.0\CallAGuy\obj\Debug\CallAGuy.csproj.AssemblyReference.cache
+C:\Users\sicel\Desktop\Practice\CallAGuy1.0\CallAGuy\obj\Debug\CallAGuy.frmRegister.resources

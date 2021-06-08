@@ -39,8 +39,8 @@ namespace CallAGuy
         {
 
             lblDisplayPetrol.Text = trackBar1.Value.ToString();
-            int a = Convert.ToInt32(lblDisplayPetrol.Text);
-            int b = a * 14;
+            double a = Convert.ToInt32(lblDisplayPetrol.Text);
+            double b = a * 14.43;
             lblRands.Text = b.ToString();
             
             /*
