@@ -29,13 +29,14 @@ namespace CallAGuy
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.orderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.previousOrdersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbxDieselType = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gbxPetrolMeter = new System.Windows.Forms.GroupBox();
@@ -45,15 +46,17 @@ namespace CallAGuy
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblDisplayPetrol = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.errProDieselType = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gbxPetrolMeter.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errProDieselType)).BeginInit();
             this.SuspendLayout();
             // 
             // trackBar1
@@ -92,7 +95,7 @@ namespace CallAGuy
             // 
             this.previousOrdersToolStripMenuItem.ForeColor = System.Drawing.Color.Goldenrod;
             this.previousOrdersToolStripMenuItem.Name = "previousOrdersToolStripMenuItem";
-            this.previousOrdersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.previousOrdersToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.previousOrdersToolStripMenuItem.Text = "New Order";
             this.previousOrdersToolStripMenuItem.Click += new System.EventHandler(this.previousOrdersToolStripMenuItem_Click);
             // 
@@ -114,21 +117,21 @@ namespace CallAGuy
             this.logoutoolStripMenuItem.Text = "Logout";
             this.logoutoolStripMenuItem.Click += new System.EventHandler(this.logoutoolStripMenuItem_Click);
             // 
-            // comboBox1
+            // cbxDieselType
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.Goldenrod;
-            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.Color.White;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbxDieselType.BackColor = System.Drawing.Color.Goldenrod;
+            this.cbxDieselType.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbxDieselType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbxDieselType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxDieselType.ForeColor = System.Drawing.Color.White;
+            this.cbxDieselType.FormattingEnabled = true;
+            this.cbxDieselType.Items.AddRange(new object[] {
             "Diesel Plus",
             "Diesel Minus"});
-            this.comboBox1.Location = new System.Drawing.Point(36, 241);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(170, 23);
-            this.comboBox1.TabIndex = 3;
+            this.cbxDieselType.Location = new System.Drawing.Point(36, 241);
+            this.cbxDieselType.Name = "cbxDieselType";
+            this.cbxDieselType.Size = new System.Drawing.Size(170, 23);
+            this.cbxDieselType.TabIndex = 3;
             // 
             // groupBox1
             // 
@@ -137,7 +140,7 @@ namespace CallAGuy
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cbxDieselType);
             this.groupBox1.Controls.Add(this.trackBar1);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -235,6 +238,20 @@ namespace CallAGuy
             this.lblDisplayPetrol.Size = new System.Drawing.Size(0, 20);
             this.lblDisplayPetrol.TabIndex = 7;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Goldenrod;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(23, 335);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(197, 27);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "ORDER DETAILS";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -267,19 +284,9 @@ namespace CallAGuy
             this.btnClear.Text = "CHECKOUT";
             this.btnClear.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // errProDieselType
             // 
-            this.button2.BackColor = System.Drawing.Color.Goldenrod;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(23, 335);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(197, 27);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "ORDER DETAILS";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.errProDieselType.ContainerControl = this;
             // 
             // frmOrder
             // 
@@ -303,6 +310,7 @@ namespace CallAGuy
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gbxPetrolMeter.ResumeLayout(false);
             this.gbxPetrolMeter.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errProDieselType)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -314,7 +322,7 @@ namespace CallAGuy
         private System.Windows.Forms.ToolStripMenuItem orderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem previousOrdersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbxDieselType;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -329,6 +337,7 @@ namespace CallAGuy
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.ErrorProvider errProDieselType;
     }
 }
 

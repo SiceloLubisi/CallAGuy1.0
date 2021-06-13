@@ -30,7 +30,7 @@ namespace CallAGuy
         {
             lblDisplayPetrol.Text = "0";
             lblRands.Text = "0";
-            comboBox1.SelectedIndex = -1;
+            cbxDieselType.SelectedIndex = -1;
             trackBar1.Value = trackBar1.Minimum; 
             
         }
@@ -70,7 +70,11 @@ namespace CallAGuy
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Instructions on how to use the app");
+            this.Hide();
+            frmHelpInformation frmHelpInfo = new frmHelpInformation();
+            frmHelpInfo.ShowDialog();
+
+            //MessageBox.Show("Instructions on how to use the app");
         }
 
         //Logout Click Event
@@ -84,16 +88,24 @@ namespace CallAGuy
         private void button2_Click(object sender, EventArgs e)
         {
 
-            if (comboBox1.SelectedItem != null)
+            if (cbxDieselType.SelectedItem != null)
             {
+                /*
                 string a;
                 object selectedItem = comboBox1.SelectedItem;
                 a = selectedItem.ToString();
                 MessageBox.Show("You have ordered " + lblDisplayPetrol.Text + " litres of " + a + " which will cost an estimated Total Amount of: R" + lblRands.Text + ".");
+                */
+
+                this.Hide();
+                frmOrderDetails frmOrder = new frmOrderDetails();
+                frmOrder.ShowDialog();
             }
             else
             {
-                MessageBox.Show("Please select a valid Diesel Type!"); 
+                cbxDieselType.Focus();
+                errProDieselType.SetError(cbxDieselType, "Please select a valid Diesel Type!"); 
+;               //MessageBox.Show("Please select a valid Diesel Type!"); 
             }
         }
     }
